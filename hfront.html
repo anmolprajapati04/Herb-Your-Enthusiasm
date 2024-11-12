@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customized Meal Order</title>
+    <link rel="stylesheet" href="cfront.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Order Your Customized Meal</h1>
+        <form id="meal-form">
+            <div class="form-group">
+                <label for="meal-type">Choose your meal type:</label>
+                <select id="meal-type" name="mealType">
+                    <option value="vegan">Vegan</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="meat">Meat</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ingredients">Select ingredients:</label>
+                <input type="checkbox" id="ingredient1" name="ingredients" value="Tomatoes"> Tomatoes<br>
+                <input type="checkbox" id="ingredient2" name="ingredients" value="Lettuce"> Lettuce<br>
+                <input type="checkbox" id="ingredient3" name="ingredients" value="Chicken"> Chicken<br>
+                <input type="checkbox" id="ingredient4" name="ingredients" value="Cheese"> Cheese<br>
+            </div>
+            <div class="form-group">
+                <label for="special-instructions">Special instructions:</label>
+                <textarea id="special-instructions" name="instructions" rows="4"></textarea>
+            </div>
+            <button type="submit">Submit Order</button>
+        </form>
+        <div id="order-summary" class="hidden">
+            <h2>Order Summary</h2>
+            <p id="summary-text"></p>
+        </div>
+    </div>
+    <script src="jfront.js"></script>
+</body>
+</html>
